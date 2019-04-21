@@ -1,0 +1,282 @@
+html {
+  font-size: 18px;
+  line-height: 1.4;
+  font-family: Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+
+
+/* Entire Banner */
+header {
+  background-image: url("../images/glasses-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30rem;
+}
+
+.header .container {
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* Ipad Screen */
+@media only screen and (max-width: 1024px) {
+  .container {
+    max-width: 100%;
+  }
+
+  header {
+    height: 22rem;
+  }
+}
+
+/* Smartphone Screen */
+@media only screen and (max-width: 700px) {
+  header {
+    height: 17rem;
+    background-position: 20%;
+  }
+}
+
+
+/* Upper Banner */
+.upper-banner {
+  background-color: cadetblue;
+  width: 100%;
+  position: relative;
+  top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+  align-items: center;
+  color: white;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 1.5rem;
+  margin-left: 2rem;
+  margin-right: 1rem;
+}
+
+
+.banner-nav span {
+  padding-right: 2rem;
+}
+
+#menu-btn {
+  display: none;
+}
+
+
+/* iPad Screen */
+@media only screen and (max-width: 1024px) {
+  .upper-banner {
+    top: 0;
+  }
+}
+
+
+/* Smartphone Screen */
+@media only screen and (max-width: 700px) {
+  .banner-nav {
+    display: none;
+  }
+
+  .logo span {
+    display: none;
+  }
+
+  #menu-btn {
+    display: block;
+    margin-right: 2rem;
+  }
+}
+
+
+/* Lower Banner */
+header .flex {
+  justify-content: flex-end;
+}
+
+.lower-banner {
+  display: inline-block;
+  margin-top: 10rem;
+  margin-right: -2rem;
+  padding: 1.5rem 5rem;
+  background-color: white;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+
+/* iPad Screen */
+@media only screen and (max-width: 1024px) {
+  .lower-banner {
+    margin-top: 5rem;
+    font-size: 1.33rem;
+    padding: 0.75rem 4rem;
+    margin-right: 2rem;
+  }
+}
+
+
+/* Smartphone Screen */
+@media only screen and (max-width: 700px) {
+  .lower-banner {
+    width: 100%;
+    margin: 9rem 0 0 0;
+    padding: 1rem 0;
+  }
+
+  h1 {
+    font-size: 1rem;
+    text-align: center;
+    line-height: 0;
+  }
+}
+
+
+
+
+/* Services */
+.services, .company-info {
+  padding: 3rem 0 0 0;
+  display: flex;
+  justify-content: center;
+}
+
+.image {
+  height: 8rem;
+  width: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: 0 3rem;
+}
+
+.paper img {
+  width: 3.5rem;
+}
+
+.fittings img {
+  width: 5rem;
+}
+
+.delivery img {
+  width: 5rem;
+}
+
+
+/* Smartphone Screen */
+@media only screen and (max-width: 700px) {
+  .services, .company-info {
+    width: 100%;
+    padding: 3.77rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0;
+  }
+
+  .image span, .info-description {
+    font-size: 0.77rem;
+  }
+}
+
+
+
+/* Company Information */
+.info {
+  width: 35%;
+  margin: 0 5%;
+}
+
+.info-title {
+  width: 10rem;
+  background-color: cadetblue;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0.5rem 1.25rem;
+}
+
+.info-description {
+  padding-top: 1rem;
+}
+
+/* Smartphone Screen */
+@media only screen and (max-width: 700px) {
+  .info {
+    width: 100%;
+  }
+
+  .info-title {
+    width: 100%;
+    text-align: center;
+  }
+
+  .info-description {
+    padding-bottom: 4rem;
+  }
+}
+
+
+
+
+/* Footer */
+footer {
+  margin: 5rem 0 0 0;
+  background-color: azure;
+}
+
+.footer-banner {
+  display: flex;
+  align-items: center;
+  padding: 4rem;
+}
+
+.footer-banner img {
+  height: 1.5rem;
+  padding-right: 1rem;
+}
+
+/* Smartphone Screen */
+@media only screen and (max-width: 700px) {
+  footer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-banner p {
+    display: none;
+  }
+}
